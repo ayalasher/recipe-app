@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import styles from './search.module.css'
 
 export default  function Search({foodData,setfoodData}) {
 
@@ -21,9 +22,9 @@ export default  function Search({foodData,setfoodData}) {
         fetchfood();
 
     },[Query])
-    return <div>
+    return <div className={styles.searchcontainer}  >
         {/* <div>From the searh component</div> */}
 
-        <input value={Query} onChange={(e)=>setQuery(e.target.value)} type="text" />
+        <input placeholder="search food recipe" className={styles.input} value={Query} onChange={(e)=>setQuery(e.target.value)} type="text" />
     </div> 
 }
