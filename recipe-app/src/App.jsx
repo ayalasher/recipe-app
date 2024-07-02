@@ -6,7 +6,6 @@ import Nav from "./components/Nav.jsx"
 import Container from "./components/Container.jsx"
 import Leftcontainer from "./components/Leftcontainer.jsx"
 import Rightcontainer from "./components/Rightcontainer.jsx"
-import styles from './components/LeftC.module.css'
 
 function App() {
 
