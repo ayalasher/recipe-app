@@ -1,3 +1,5 @@
+import styles from './RightC.module.css'
+
 export default function Rightcontainer({children}) {
-    return <div> {children} </div>
+    return <div className={styles.rightc} > {children} </div>
 }

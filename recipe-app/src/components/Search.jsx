@@ -5,6 +5,7 @@ export default  function Search({foodData,setfoodData}) {
 
     // The use state hook
     const [Query,setQuery] = useState("")
+    
 
     const URL = "https://api.spoonacular.com/recipes/complexSearch"
 

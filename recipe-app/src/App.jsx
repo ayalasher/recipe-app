@@ -6,10 +6,13 @@ import Nav from "./components/Nav.jsx"
 import Container from "./components/Container.jsx"
 import Leftcontainer from "./components/Leftcontainer.jsx"
 import Rightcontainer from "./components/Rightcontainer.jsx"
+import Fooddetail from "./components/Fooddetail.jsx"
 
 function App() {
 
   const [foodData,setfoodData] = useState([])
+
+  const [FoodId,setFoodId] = useState("715415")
 
   return <div>
     {/* <FoodItem/> */}
@@ -18,9 +21,9 @@ function App() {
     <Search foodData={foodData} setfoodData={setfoodData}  />
 
     <Container>
-      <Leftcontainer > <Foodlist  foodData={foodData} setfoodData={setfoodData} /></Leftcontainer>
+      <Leftcontainer > <Foodlist setFoodId={setFoodId} foodData={foodData} setfoodData={setfoodData} /></Leftcontainer>
      
-     <Rightcontainer></Rightcontainer>
+     <Rightcontainer> <Fooddetail FoodId={FoodId} /> </Rightcontainer>
 
      
 
